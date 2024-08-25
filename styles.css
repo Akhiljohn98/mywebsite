@@ -1,0 +1,236 @@
+/* Style for the image gallery */
+.gallery img {
+    width: 100%; /* This will make the image take up the full width of the parent container */
+    height: auto; /* This will ensure the height is adjusted automatically to maintain the aspect ratio */
+    max-width: 500px; /* You can adjust this to your preference */
+    display: block;
+    margin: 0 auto; /* This will center the image */
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a nice effect */
+}
+/* Social Media Section Styling */
+#social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#social-media a {
+    text-decoration: none;
+    color: #0073e6; /* Instagram Blue */
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+#social-media i {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+#social-media a:hover {
+    color: #fe4f28; /* Change color on hover */
+}
+/* General Color Enhancements */
+body {
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Text color */
+}
+
+h1, h2 {
+    color: #0073e6; /* Primary heading color */
+}
+
+a {
+    color: #0073e6; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff5733; /* Hover color for links */
+}
+/* Typography Enhancements */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+/* Section Spacing Enhancements */
+section {
+    padding: 40px 20px;
+    margin: 40px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+/* Horizontal Carousel Styling */
+.carousel {
+    display: flex;
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    gap: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+.carousel img {
+    width: 150px; /* Smaller initial width */
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, width 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect to Expand the Image */
+.carousel img:hover {
+    width: 300px; /* Expands the image when hovered */
+    transform: scale(1.1); /* Slight zoom for additional emphasis */
+}
+/* Hide Scrollbar - Works across browsers */
+.carousel {
+    display: flex;
+    overflow-x: scroll; /* Horizontal scrolling enabled */
+    gap: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+    
+    /* Hide the scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer and Edge */
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+/* Full Page Background Image */
+body {
+    background-image: url('akhil.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Content Styling */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for readability */
+}
+
+h1, h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.5em;
+}
+/* Adjust Spacing for Content Sections */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 150px 20px; /* Increased padding for more space around content */
+    margin: 0 auto;
+    max-width: 1000px; /* Limit content width for better readability */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for readability */
+    border-radius: 10px; /* Adds rounded corners to the content block */
+}
+
+section {
+    padding: 60px 20px; /* Add more padding for sections */
+    margin: 40px auto;
+    max-width: 1000px; /* Set max-width for readability */
+    color: white;
+    background: rgba(0, 0, 0, 0.6); /* Add semi-transparent background for readability */
+    border-radius: 10px; /* Rounded corners for a more polished look */
+}
+
+/* Headings and Typography */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/* Media Queries for Responsive Design */
+
+/* General Styles for Smaller Devices (Mobile and Small Tablets) */
+@media screen and (max-width: 768px) {
+    /* Adjust Content Padding and Font Sizes */
+    .content, section {
+        padding: 50px 15px;
+        max-width: 90%; /* Narrower max width for small screens */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Smaller heading for small screens */
+    }
+
+    h2 {
+        font-size: 2em; /* Adjust second-level headings */
+    }
+
+    p {
+        font-size: 1.1em; /* Adjust paragraph font size */
+    }
+}
+
+/* Extra Small Devices (Mobile Phones in Portrait Mode) */
+@media screen and (max-width: 480px) {
+    /* Further Adjustments for Smaller Screens */
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em; /* Slightly smaller text for readability */
+    }
+
+    .content, section {
+        padding: 30px 10px;
+    }
+
+    /* Adjust Image Sizes in the Carousel for Small Screens */
+    .carousel img {
+        width: 100px;
+        height: auto;
+    }
+
+    /* Adjust Carousel Gap */
+    .carousel {
+        gap: 10px;
+    }
+}
