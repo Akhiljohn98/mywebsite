@@ -4,53 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myle Akhil John's Website</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Linking the CSS file -->
+    
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="styles.css"> 
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <!-- AOS CSS for Animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
-    <!-- Your Content -->
-    <div class="content">
-        <h1>Welcome to Myle Akhil John's Website</h1>
-        <p>I love to travel and explore the world. Join me on my adventures!</p>
+   <!-- Content Section with AOS and Image -->
+<div class="content" data-aos="fade-up">
+    <h1>Myle Akhil John</h1>
+    <div class="welcome-image">
+        <img src="akhil john.jpg" alt="Myle Akhil John" class="oval-3d-image">
     </div>
-</body>
+    <p>I love to travel and explore the world. Join me on my adventures!</p>
+</div>
 
 
-    <!-- About Me Section -->
-<section id="about-me">
-    <h2>About Me</h2>
-    <p>Hi, I’m Myle Akhil John, a versatile professional with 5 years of experience in bank and company management, coupled with a strong background in development and analysis. I am passionate about anime, Japanese culture, and solo travel. I have embarked on thrilling adventures in the UAE and Egypt, including a skydive in Dubai. When I’m not working or travelling, I enjoy cooking and exploring new flavours.</p>
-</section>
+    <!-- About Me Section with AOS -->
+    <section id="about-me" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>Hi, I’m Myle Akhil John, a versatile professional with 5 years of experience in bank and company management, coupled with a strong background in development and analysis. I am passionate about anime, Japanese culture, and solo travel. I have embarked on thrilling adventures in the UAE and Egypt, including a skydive in Dubai. When I’m not working or travelling, I enjoy cooking and exploring new flavours.</p>
+    </section>
 
-<!-- Social Media Section -->
-<section id="social-media">
-    <h2>Connect with Me</h2>
-    <a href="https://www.instagram.com/akhil_john.m/" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-    </a> |
-    <a href="https://x.com/Akhil7f7" target="_blank">
-        <i class="fab fa-twitter"></i> Twitter
-    </a>
-</section>
+    <!-- Social Media Section with AOS -->
+    <section id="social-media" data-aos="fade-up">
+        <h2>Connect with Me</h2>
+        <a href="https://www.instagram.com/akhil_john.m/" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a> |
+        <a href="https://x.com/Akhil7f7" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+        </a>
+    </section>
 
-<!-- Travel Section with Horizontal Scrolling Carousel -->
-<section id="travel">
-    <h2>My Solo Adventures</h2>
-    <p>I enjoy travelling solo, and here are some highlights from my journeys to Dubai and Egypt:</p>
+    <!-- Travel Section with AOS -->
+    <section id="travel" data-aos="fade-up">
+        <h2>My Solo Adventures</h2>
+        <p>Here are some highlights from my journeys to Dubai and Egypt:</p>
 
-    <!-- Horizontal Scrolling Carousel -->
-    <div class="carousel">
-        <img src="g0013084.JPG" alt="Skydive in Dubai">
-        <img src="gopr3064.JPG" alt="After Skydive in Dubai">
-        <img src="g0013156.JPG" alt="Mid-skydive Dubai">
-        <img src="g0013098.JPG" alt="Freefall in Dubai">
-        <img src="e53512a0-21e6-4858-9265-346b2ae84741.JPG" alt="Exploring UAE desert">
-        <img src="IMG_6681.jpg" alt="Dubai City View">
-        <img src="736CFCD0-E682-40FB-A48E-ADC18A18A6A5.JPG" alt="More travel in the UAE">
-        <img src="IMG_6817.jpg" alt="Desert Falcon Experience">
+        <!-- Horizontal Scrolling Carousel -->
+        <div class="carousel">
+            <img src="gopr3064.JPG" alt="After Skydive in Dubai">
+            <img src="g0013156.JPG" alt="Mid-skydive Dubai">
+            <img src="IMG_2583.jpg" alt="Egypt">
+            <img src="g0013098.JPG" alt="Freefall in Dubai">
+            <img src="e53512a0-21e6-4858-9265-346b2ae84741.JPG" alt="Exploring UAE desert">
+            <img src="IMG_6681.jpg" alt="Dubai City View">
+            <img src="736CFCD0-E682-40FB-A48E-ADC18A18A6A5.JPG" alt="More travel in the UAE">
+            <img src="IMG_6817.jpg" alt="Desert Falcon Experience">
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+<section id="projects" data-aos="fade-up">
+    <h2>My Projects</h2>
+
+    <!-- Container for Project Cards -->
+    <div class="project-container">
+        
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <img src="project1.jpg" alt="Project 1 Image">
+            <div class="project-card-content">
+                <h3>Warehouse Optimization for IKEA Milano</h3>
+                <p>Applied ABC analysis and Just-In-Time principles to improve operational efficiency at the IKEA Milano warehouse.</p>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <img src="project2.jpg" alt="Project 2 Image">
+            <div class="project-card-content">
+                <h3>Composite Nose Cone for Re-entry Vehicles</h3>
+                <p>Developed a model using CATIA and performed structural analysis using ANSYS to optimize the nose cone design for re-entry vehicles.</p>
+            </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+            <img src="project3.jpg" alt="Project 3 Image">
+            <div class="project-card-content">
+                <h3>UAVs for Natural Disasters</h3>
+                <p>Designed UAV arms and conducted static structural analysis to assist in disaster response efforts.</p>
+            </div>
+        </div>
+        
+        <!-- Add More Project Cards as Needed -->
     </div>
 </section>
 
+
+
+    <!-- AOS JS for Animations -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Duration of animation
+            easing: 'ease-in-out', // Easing of animation
+            once: true // Animation occurs only once when scrolled into view
+        });
+    </script>
 </body>
 </html>

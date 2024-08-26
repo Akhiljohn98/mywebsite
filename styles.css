@@ -8,6 +8,29 @@
     border-radius: 8px; /* Optional: Adds rounded corners to the image */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a nice effect */
 }
+
+/* Welcome Image Container */
+.welcome-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Oval 3D Image Styling */
+.oval-3d-image {
+    width: 200px; /* Adjust the size as needed */
+    height: 250px; /* Height to create an oval shape */
+    object-fit: cover;
+    border-radius: 50% / 60%; /* Creates the oval shape */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2); /* Adds a 3D shadow effect */
+    transform: perspective(1000px) rotateX(15deg) rotateY(-15deg); /* Adds a 3D perspective */
+    transition: transform 0.3s ease;
+}
+
+/* Optional Hover Effect for More Interactivity */
+.oval-3d-image:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.05); /* Slight zoom and rotate back to 0 */
+}
+
 /* Social Media Section Styling */
 #social-media {
     text-align: center;
@@ -232,5 +255,113 @@ p {
     /* Adjust Carousel Gap */
     .carousel {
         gap: 10px;
+    }
+}
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+/* Hover Effects for Links and Buttons */
+a:hover, button:hover {
+    color: #ff5733; /* Change color on hover */
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Images */
+img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply Fade-in Animation to Sections */
+section {
+    animation: fadeIn 1.5s ease-in-out; /* Duration of 1.5 seconds */
+}
+/* Projects Section Styling */
+#projects {
+    padding: 80px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+/* Projects Section Heading */
+#projects h2 {
+    font-size: 3em;
+    color: #0073e6;
+    margin-bottom: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Project Cards Container */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Project Card Hover Effect */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image */
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Project Card Content */
+.project-card-content {
+    padding: 20px;
+}
+
+.project-card-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #0073e6;
+    font-weight: 600;
+}
+
+.project-card-content p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Project Cards */
+@media screen and (max-width: 768px) {
+    #projects h2 {
+        font-size: 2.5em;
+    }
+
+    .project-card {
+        max-width: 100%;
     }
 }
